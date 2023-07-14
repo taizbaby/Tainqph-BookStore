@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewData["Title"] = "_SideNavPartialView";
+    
+}
+
+<div class="side-nav">
+    <div class="side-nav-inner">
+        <ul class="side-nav-menu scrollable">
+            <li class="nav-item open">
+                <a class="dropdown-toggle" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-dashboard"></i>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" asp-area="Admin" asp-controller="AdminBill" asp-action="Index">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Quản Lý Hóa Đơn</span>
+                    
+                </a>
+                
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" asp-area="Admin" asp-controller="Product" asp-action="Index">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-build"></i>
+                    </span>
+                    <span class="title">Quản Lý Sản Phẩm</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a asp-area="Admin" asp-controller="Product" asp-action="Index">Supplier</a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Supplier" asp-action="Index">Supplier</a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Type" asp-action="Index">Type</a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Producer" asp-action="Index">Producer</a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" asp-area="Admin" asp-controller="Role" asp-action="Index">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-hdd"></i>
+                    </span>
+                    <span class="title">Quản Lý Chuc Vu</span>
+                    
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-form"></i>
+                    </span>
+                    <span class="title">Doanh Số</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-table"></i>
+                    </span>
+                    <span class="title">Hệ thống</span>
+                    <span class="arrow">
+                        <i class="arrow-icon"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="basic-table.html">Basic Table</a>
+                    </li>
+                    <li>
+                        <a href="data-table.html">Data Table</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</div>
